@@ -1,0 +1,16 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: #009680;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+header h2 {
+  text-align: center;
+  color: white;
+}
