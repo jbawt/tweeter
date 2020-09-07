@@ -4,9 +4,21 @@ nav {
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav span {
   font-family: 'Bungee', sans-serif;
-  
+  font-size: 50px;
+  background: -webkit-linear-gradient(lightblue, lightblue, yellow, lightblue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+nav p {
+  text-decoration: underline;
+}
+
+ 

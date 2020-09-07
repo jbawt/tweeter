@@ -1,16 +1,22 @@
-header {
-  height: 400px;
-  width: 100%;
-  background-color: #009680;
-  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+* {
+  margin: 0;
 }
 
-.avatar {
+header {
+  height: 400px;
+  width: 100vw;
+  background-color: #009680;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 header h2 {
   text-align: center;
-  color: white;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: darkgrey;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
 }
