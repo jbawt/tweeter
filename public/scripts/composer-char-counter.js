@@ -5,6 +5,7 @@ $(document).ready(() => {
     const counter = $(this.children[1][2]);
     let counterValue = 140;
     let characterLength = this.children[1][0].value.length;
+    
     this.children[1][2].value = (counterValue - characterLength);
     if (this.children[1][2].value < 0) {
       counter.css('color', 'red');
