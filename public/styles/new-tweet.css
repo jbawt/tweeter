@@ -6,6 +6,9 @@
   margin: 15px 0px;
   border-radius: 30px;
   color: white;
+}
+
+.new-tweet:hover {
   box-shadow: 10px 10px lightgrey;
 }
 
