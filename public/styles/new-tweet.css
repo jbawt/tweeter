@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: #4056A1;
-  height: 225px;
+  height: 200px;
   margin: 15px 0px;
   border-radius: 30px;
   color: white;
@@ -24,12 +24,7 @@
 
 .tweet-form textarea {
   width: 80%;
-  border-radius: 15px;
-}
-
-.tweet-form label {
-  position: relative;
-  right: 28.5%;
+  border-radius: 10px;
 }
 
 .button-and-counter {
@@ -45,5 +40,15 @@
   font-size: 20px;
   width: 100px;
   height: 40px;
-  border-radius: 15px;
+  border-radius: 10px;
+}
+
+.counter {
+  font-family: 'Bungee', sans-serif;
+}
+
+.message-arrowIcon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
