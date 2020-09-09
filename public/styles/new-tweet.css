@@ -10,7 +10,9 @@
 }
 
 .new-tweet:hover {
-  box-shadow: 10px 10px darkgrey;
+  box-shadow: 
+    0 20px 30px 5px rgba(0, 0, 0, 0.5),
+    0 5px 5px 0 rgba(8, 8, 8, 0.246);
 }
 
 .new-tweet label {
@@ -33,7 +35,6 @@
   border: none;
   border-bottom: 2px solid black;
   width: 80%;
-  /* border-radius: 10px; */
   resize: none;
 }
 
