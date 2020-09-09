@@ -21,6 +21,7 @@ nav span {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  box-shadow: 0 8px 0 0 #999;
 }
 
 nav p {
@@ -31,6 +32,14 @@ nav p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 20%;
+  padding-top: 5px;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 0 30px 30px 3px #00000094;
 }
 
+.message-arrowIcon-container:hover {
+  cursor: pointer;
+}
  

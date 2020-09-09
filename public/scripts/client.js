@@ -73,5 +73,10 @@ $(document).ready(function() {
         $('.counter').val(140);
       });
   });
+
+  // ======= TOGGLES NEW TWEET FORM ===== //
+  $('#new-tweet-toggle-btn').click(() => {
+    $('#new-tweet').slideToggle(800);
+  });
 });
 

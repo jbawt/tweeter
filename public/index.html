@@ -22,7 +22,7 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
-      <div class="message-arrowIcon-container">
+      <div id="new-tweet-toggle-btn" class="message-arrowIcon-container">
         <p><strong>Write</strong> a new tweet</p>
         <img src="./images/download.png">
       </div>
@@ -38,11 +38,10 @@
       </div>
     </header>
 
-    <!-- Page-specific (main) content here -->
     <main class="container">
 
       <!-- section for new tweet form -->
-      <section class="new-tweet">
+      <section id="new-tweet" class="new-tweet">
         <form method="POST" action="/tweets" class="tweet-form">
           <label for="text-area">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
