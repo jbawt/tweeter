@@ -43,9 +43,9 @@
 
       <!-- section for new tweet form -->
       <section class="new-tweet">
-        <h2>New Tweet</h2>
         <form method="POST" action="/tweets" class="tweet-form">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <label for="text-area">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
           <div class="button-and-counter">
             <button class="tweet-btn" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>

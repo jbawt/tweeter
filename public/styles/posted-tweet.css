@@ -7,6 +7,7 @@
   border-radius: 30px;
   border: 4px solid black;
   color: black;
+  /* background-color: #00070a63; */
 }
 
 .tweet:hover {
@@ -21,6 +22,8 @@
   margin-top: 5px;
   width: 30%;
   height: 80px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 25px;
   background-color: #4056A1;

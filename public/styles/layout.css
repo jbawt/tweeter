@@ -25,6 +25,11 @@ body {
   align-items: center;
 }
 
+main {
+  position: relative;
+  top: 150px;
+}
+
 .container {
   width: 90%;
   background-color: #f4f1ec;

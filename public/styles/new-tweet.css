@@ -10,12 +10,13 @@
 }
 
 .new-tweet:hover {
-  box-shadow: 10px 10px lightgrey;
+  box-shadow: 10px 10px darkgrey;
 }
 
-.new-tweet h2 {
+.new-tweet label {
   height: 60px;
   line-height: 60px;
+  font-size: xx-large;
   text-align: center;
 }
 
@@ -27,8 +28,17 @@
 }
 
 .tweet-form textarea {
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
   width: 80%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  resize: none;
+}
+
+.tweet-form textarea:focus {
+  outline: none;
 }
 
 .button-and-counter {

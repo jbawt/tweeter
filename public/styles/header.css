@@ -4,17 +4,19 @@
 
 .header {
   height: 400px;
-  width: 100vw;
-  background-color: #99fff0;
-  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  width: 100%;
+  background-color: #00070a;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid black;
+  position: relative;
+  top: 120px;
 }
 
-header h2 {
+.header h2 {
   text-align: center;
   -webkit-text-stroke: 2px black;
   -webkit-text-fill-color: darkgrey;
