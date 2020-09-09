@@ -1,13 +1,12 @@
 .tweet {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 200px;
   margin: 15px 0px;
   border-radius: 30px;
   border: 4px solid black;
   color: black;
-  /* background-color: #00070a63; */
 }
 
 .tweet:hover {
@@ -19,9 +18,10 @@
 .tweet header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin-top: 5px;
+  padding: 0 10px;
   width: 30%;
   height: 80px;
   border-bottom: 2px solid black;
@@ -30,13 +30,18 @@
   border-top-left-radius: 25px;
   background-color: #4056A1;
   position: relative;
-  right: 10px;
-  bottom: 10px;
+  right: 0.8%;
+  bottom: 13%;
 }
 
-.tweet .username {
+.username {
   position: relative;
   right: 20px;
+  visibility: hidden;
+}
+
+.tweet:hover .username {
+  visibility: visible;
 }
 
 .tweet header {
