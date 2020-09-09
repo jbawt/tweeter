@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  
   // =========== CREATES AND RENDERS TWEETS TO PAGE =======//
   const renderTweets = function(tweets) {
     $('#tweet-container').empty();
@@ -7,6 +7,12 @@ $(document).ready(function() {
       const $tweet = createTweetElement(tweet);
       $('#tweet-container').prepend($tweet);
     }
+  }
+
+  const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
   }
 
   const createTweetElement = (tweetData) => {
@@ -20,16 +26,16 @@ $(document).ready(function() {
       `<article class="tweet">
         <header>
           <div>
-            <img src="${avatar}">
-            <p>${user}</p>
+            <img src="${escape(avatar)}">
+            <p>${escape(user)}</p>
           </div>
-          <p class="username">${handle}</p>
+          <p class="username">${escape(handle)}</p>
         </header>
 
-        <p class="tweet-text">${tweet}</p>
+        <p class="tweet-text">${escape(tweet)}</p>
 
         <footer>
-          <p>${timeStamp}</p>
+          <p>${escape(timeStamp)}</p>
           <div>
             <img src="/images/flag.png">
             <img src="/images/refresh.png">
@@ -49,15 +55,23 @@ $(document).ready(function() {
   loadTweets();
   
   // ===== HANDLES FORM SUBMISSIONS ========= //
+  $('#error-msg').hide();
+  $('#tweet-text').click(() => {
+    $('#error-msg').hide();  
+  });
   $('.tweet-form').submit(function(event) {
     event.preventDefault();
+    if ($('#tweet-text').val() === '' || $('#tweet-text').val().length > 140) {
+      $('#error-msg').slideDown(1000);
+      return;
+    }
     const serializeData = $(this).serialize();
     $.post('/tweets', serializeData)
       .then(() => {
         loadTweets();
         $('#tweet-text').val('');
         $('.counter').val(140);
-      })
+      });
   });
 });
 
