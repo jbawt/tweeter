@@ -57,12 +57,12 @@ $(document).ready(function() {
   // ===== HANDLES FORM SUBMISSIONS ========= //
   $('#error-msg').hide();
   $('#tweet-text').click(() => {
-    $('#error-msg').hide();  
+    $('#error-msg').slideUp();  
   });
   $('.tweet-form').submit(function(event) {
     event.preventDefault();
     if ($('#tweet-text').val() === '' || $('#tweet-text').val().length > 140) {
-      $('#error-msg').slideDown(1000);
+      $('#error-msg').slideDown();
       return;
     }
     const serializeData = $(this).serialize();
@@ -75,8 +75,10 @@ $(document).ready(function() {
   });
 
   // ======= TOGGLES NEW TWEET FORM ===== //
+  $('#new-tweet').hide();
   $('#new-tweet-toggle-btn').click(() => {
     $('#new-tweet').slideToggle(800);
+    $('#tweet-text').focus();
   });
 });
 

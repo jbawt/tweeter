@@ -22,21 +22,20 @@
   align-items: center;
   margin-top: 5px;
   padding: 0 10px;
-  width: 30%;
-  height: 80px;
+  width: 50%;
+  height: 100%;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 25px;
-  background-color: #4056A1;
+  background-color: #4c64b1d8;
   position: relative;
-  right: 0.8%;
-  bottom: 13%;
+  bottom: 5%;
 }
 
 .username {
   position: relative;
-  right: 20px;
+  right: 3%;
   visibility: hidden;
 }
 
@@ -49,7 +48,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 10px;
+  width: 100%;
 }
 
 .tweet header div p {
@@ -68,7 +67,8 @@
 .tweet footer {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 15%;
+  width: 100%;
   color: white;
   background-color: #4056A1;
   border-bottom: 4px solid black;
@@ -84,12 +84,34 @@
   align-items: center;
   width: 8%;
   position: relative;
-  right: 10px;
+  right: 3%;
+  visibility: hidden;
+}
+
+.tweet:hover footer div {
+  visibility: visible;
 }
 
 .tweet footer p {
   font-size: smaller;
   position: relative;
-  left: 10px;
-  top: 5px;
+  left: 5%;
+  top: 1%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tweet {
+    height: 200px;
+    width: 650px;
+    margin: 8%;
+  }
+  .tweet header {
+    right: 1.7%;
+  }
+  .tweet footer {
+    width: 100.2%;
+  }
+  .tweet footer div {
+    right: 5%;
+  }
 }

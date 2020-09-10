@@ -14,14 +14,14 @@ html {
  * Global layout stuff
  */
 
-body {
+ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -33,4 +33,41 @@ main {
 .container {
   width: 90%;
   background-color: #f4f1ec;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  main {
+    position: relative;
+    top: 150px;
+  }
+
+  .container {
+    width: 90%;
+    background-color: #f4f1ec;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    margin-right: 10%;
+    color: #545149;
+    background-color: #f4f1ec;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }

@@ -29,17 +29,45 @@ nav p {
 }
 
 .message-arrowIcon-container {
+  font-size: 0.75em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20%;
+  width: 18%;
+  height: 80%;
   padding-top: 5px;
   border: 2px solid black;
   border-radius: 30px;
-  box-shadow: 0 30px 30px 3px #00000094;
 }
 
 .message-arrowIcon-container:hover {
   cursor: pointer;
+  box-shadow: 0 30px 30px 3px #00000094;
 }
- 
+
+
+@media only screen and (min-width: 768px) {
+  .message-arrowIcon-container {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .message-arrowIcon-container {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .message-arrowIcon-container {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 90%;
+    padding-top: 5px;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
+}
