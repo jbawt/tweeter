@@ -32,4 +32,4 @@ This repository is the starter code for the project: Students will fork and clon
 This is a project that I built during my time at lighthouse labs.
 
 ### functionality
-You can use the single page application to create tweets and have them render on the page without refreshing the browser. The avatar and the _**Write** a new tweet_ button are both animated as well as the toggle behaviour for the tweet submission form. The _**Write** a new tweet_ button toggles the new tweet forms visibility using jQuery's slideToggle method. The bouncing and spin animations were both done using css.
+You can use this single page application to create tweets and have them render on the page without refreshing the browser. The avatar and the _**Write** a new tweet_ button are both animated as well as the toggle behaviour for the tweet submission form. The _**Write** a new tweet_ button toggles the new tweet forms visibility using jQuery's slideToggle method. The bouncing and spin animations were both done using css.
