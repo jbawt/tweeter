@@ -4,6 +4,14 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
+## previews
+
+![desktop]()
+![desktop with form showing]()
+![tablet]()
+![tablet mode with form showing]()
+![tweets in tablet mode]()
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
@@ -15,3 +23,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- body-parser
+- chance
+- moment.js (cdn link in index.html file)
+
+## Information
+
+This is a project that I built during my time at lighthouse labs.
+
+### functionality
+You can use the single page application to create tweets and have them render on the page without refreshing the browser. The avatar and the _**Write** a new tweet_ button are both animated as well as the toggle behaviour for the tweet submission form. The _**Write** a new tweet_ button toggles the new tweet forms visibility using jQuery's slideToggle method. The bouncing and spin animations were both done using css.

@@ -7,13 +7,15 @@ $(document).ready(function() {
       const $tweet = createTweetElement(tweet);
       $('#tweet-container').prepend($tweet);
     }
-  }
+  };
 
+
+  // helper function for preventing xss attacks
   const escape =  function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
-  }
+  };
 
   const createTweetElement = (tweetData) => {
     const user = tweetData["user"]["name"];
@@ -44,20 +46,20 @@ $(document).ready(function() {
         </footer>
       </article>`
     );
-    return $tweet
+    return $tweet;
   };
 
   const loadTweets = () => {
     $.get('/tweets', (data) => {
-      renderTweets(data);  
-    })
+      renderTweets(data);
+    });
   };
   loadTweets();
   
   // ===== HANDLES FORM SUBMISSIONS ========= //
   $('#error-msg').hide();
   $('#tweet-text').click(() => {
-    $('#error-msg').slideUp();  
+    $('#error-msg').slideUp();
   });
   $('.tweet-form').submit(function(event) {
     event.preventDefault();

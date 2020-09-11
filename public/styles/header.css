@@ -20,6 +20,10 @@
   animation: mymove 5s infinite;
 }
 
+.header:hover div img {
+  animation: none;
+}
+
 @keyframes mymove {
   45% {transform: rotate(380deg);}
 }

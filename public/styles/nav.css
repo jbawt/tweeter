@@ -67,6 +67,12 @@ nav p {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .message-arrowIcon-container {
+    font-size: 0.6em;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .message-arrowIcon-container {
     font-size: 1em;
