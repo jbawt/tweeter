@@ -16,12 +16,12 @@
   top: 120px;
 }
 
-.header div img:hover {
+.header div img {
   animation: mymove 5s infinite;
 }
 
 @keyframes mymove {
-  50% {transform: rotate(360deg);}
+  45% {transform: rotate(380deg);}
 }
 
 .header h2 {

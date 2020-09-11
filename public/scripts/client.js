@@ -72,6 +72,8 @@ $(document).ready(function() {
         $('#tweet-text').val('');
         $('.counter').val(140);
       });
+
+    $('#new-tweet').delay(1000).slideUp(500);
   });
 
   // ======= TOGGLES NEW TWEET FORM ===== //
