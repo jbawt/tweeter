@@ -6,11 +6,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## previews
 
-![desktop]()
-![desktop with form showing]()
-![tablet]()
-![tablet mode with form showing]()
-![tweets in tablet mode]()
+![desktop](https://github.com/jbawt/tweeter/blob/master/public/images/demo-images/desktop.png?raw=true)
+![desktop with form showing](https://github.com/jbawt/tweeter/blob/master/public/images/demo-images/desktop-with-form-showing.png?raw=true)
+![tablet](https://github.com/jbawt/tweeter/blob/master/public/images/demo-images/tablet.png?raw=true)
+![tablet mode with form showing](https://github.com/jbawt/tweeter/blob/master/public/images/demo-images/tablet-mode-with-form-showing.png?raw=true)
+![tweets in tablet mode](https://github.com/jbawt/tweeter/blob/master/public/images/demo-images/tweets-in-tablet-mode.png?raw=true)
 
 ## Getting Started
 
